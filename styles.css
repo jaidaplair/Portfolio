@@ -1,0 +1,131 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* Default text color */
+    background-color: #f9f9f9; /* Default background */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header and footer */
+header {
+    background-color: #007ACC;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #007ACC;
+    color: white;
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Section content */
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    background-color: #fff; /* Section background */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+section h2 {
+    color: #007ACC; /* Heading color */
+}
+
+section p {
+    color: #333; /* Paragraph color */
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    height: 200px;
+    width: 300px;
+}
+
+/* Controls buttons */
+#controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* Align controls at the center */
+    gap: 10px; /* Space between buttons */
+}
+
+#controls button {
+    background-color: #fff;
+    color: #007ACC;
+    border: 2px solid #007ACC;
+    padding: 0.5rem 1rem; /* Added padding for better clickability */
+    margin: 0 5px;
+    border-radius: 5px; /* Rounded edges for buttons */
+    cursor: pointer;
+    font-size: 16px; /* Ensure consistent font size */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+#controls button:hover {
+    background-color: #007ACC; /* Highlight button on hover */
+    color: #fff; /* Text turns white on hover */
+    transform: scale(1.05); /* Slight growth effect on hover */
+}
+
+#controls button:focus {
+    outline: 3px solid #ffa500; /* Orange outline for accessibility focus */
+}
+
+button:active {
+    transform: scale(0.95); /* Slight shrink effect when clicked */
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212; /* Body background in dark mode */
+    color: #ffffff; /* Default text color in dark mode */
+}
+
+.dark-mode header {
+    background-color: #333; /* Header background in dark mode */
+}
+
+.dark-mode footer {
+    background-color: #333; /* Footer background in dark mode */
+}
+
+.dark-mode section {
+    background-color: #1e1e1e; /* Section background in dark mode */
+    border-color: #555; /* Dark mode border */
+}
+
+.dark-mode section h2 {
+    color: #66ccff; /* Light blue heading for dark mode */
+}
+
+.dark-mode section p {
+    color: #e0e0e0; /* Light gray for paragraph text */
+}
+
+.dark-mode img {
+    filter: brightness(0.9); /* Slightly dim images in dark mode for contrast */
+}
+
+/* Hide Audio Player Interface */
+#audio-player {
+    display: none; /* Hides default audio player interface */
+}
